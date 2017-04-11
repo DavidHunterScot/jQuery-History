@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
 		// Perform AJAX GET request
 		jQuery.ajax({
 			// URL
-			url: 'http://localhost' + href,
+			url: href,
 			// METHOD
 			method: 'GET',
 			// CACHE
