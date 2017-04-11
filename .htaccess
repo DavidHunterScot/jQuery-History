@@ -1,6 +1,9 @@
 # Check mod_rewrite is installed and enabled
 <IfModule mod_rewrite.c>
 
+	# Ensure that index.php is used as the directory index
+	DirectoryIndex index.php
+
 	# Enable the Rewrite Engine
 	RewriteEngine on
 
