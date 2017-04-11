@@ -1,0 +1,18 @@
+# Check mod_rewrite is installed and enabled
+<IfModule mod_rewrite.c>
+
+	# Enable the Rewrite Engine
+	RewriteEngine on
+
+	# Rewrite only if Requested Filename
+	# is not a symbolic link
+	RewriteCond %{REQUEST_FILENAME} !-l
+	# or a directory
+	RewriteCond %{REQUEST_FILENAME} !-d
+	# or a file
+	RewriteCond %{REQUEST_FILENAME} !-f
+	# Assuming those conditions were met,
+	# Rewrite to index.php file
+	RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+
+</IfModule>

@@ -1,0 +1,11 @@
+html { background-color: #F0F0F0;  }
+body { background-color: transparent; }
+
+nav {
+	margin-bottom: 0px !important;
+}
+
+section.content {
+	padding: 15px 40px;
+	background-color: #ffffff;
+}
